@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 
+         {% block title %}
+      
+         {% endblock title %}
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'bootstrapt/css/bootstrap.min.css' %}">
+     <link rel="stylesheet" href="{% static 'css/b.css' %}">
+</head>
+<body>
+    {% include 'inc/navbar.html' %}
+   {% block content %}
+   
+   
+   {% endblock content %}
+   {% include 'inc/footer.html' %}
+<script src="{% static 'bootstrapt/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'jquery/jquery.js' %}"></script>
+<script src="{% static 'js/j.js' %}"></script>
+</body>
+</html>
